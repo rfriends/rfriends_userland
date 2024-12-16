@@ -1,9 +1,9 @@
 rfriends_userlandはandroidのuserland環境でrfriends3を動作させるスクリプトです。  
   
 cd ~/  
-wget -O rfriends_userland-main.zip https://github.com/rfriends/rfriends_userland/archive/master.zip  
-unzip rfriends_userland-mainzip  
-cd rfriends_userland-main  
+sudo apt install git  
+git clone https://github.com/rfriends/rfriends_userland.git  
+cd rfriends_userland  
 sh rfriends3_userland.sh  
   
 インストール方法は以下が参考になります。  
