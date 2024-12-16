@@ -2,7 +2,7 @@ rfriends_userlandはandroidのuserland環境でrfriends3を動作させるスク
   
 cd ~/  
 wget -O rfriends_userland-main.zip https://github.com/rfriends/rfriends_userland/archive/master.zip  
-unzip rfriends_userland.-mainzip  
+unzip rfriends_userland-mainzip  
 cd rfriends_userland-main  
 sh rfriends3_userland.sh  
   
