@@ -3,7 +3,7 @@
 # install rfriends for userland(ubuntu)
 # -----------------------------------------
 # 3.6 2024/02/24 remove samba
-# 3.8 2024/03/12 crontabC³
+# 3.8 2024/03/12 crontabÂCÂÂ³
 # 3.9 2024/03/14 add samba
 # 4.0 2024/12/15 github
 # -----------------------------------------
@@ -28,20 +28,20 @@ echo
 echo install tools
 echo
 #
-sudo apt -y update
-sudo apt -y upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
-sudo apt -y install language-pack-ja
+sudo apt-get -y install language-pack-ja
 export LANG=ja_JP.UTF-8
 
-sudo apt -y install \
+sudo apt-get -y install \
 unzip p7zip-full nano vim \
 dnsutils iproute2 tzdata openssh-server \
 wget curl atomicparsley \
 php-cli php-xml php-zip php-mbstring php-json php-curl php-intl \
 ffmpeg
 
-#sudo apt -y install chromium-browser
+#sudo apt-get -y install chromium-browser
 # -----------------------------------------
 # timezone
 sudo rm /etc/localtime 
@@ -65,21 +65,21 @@ mkdir -p /storage/internal/usr2
 sed -e ${userstr} $dir/usrdir.ini.skel > /home/$user/rfriends3/config/usrdir.ini
 # -----------------------------------------
 # cron start
-sudo apt -y install cron
+sudo apt-get -y install cron
 cd ./
 sed -e ${userstr} $dir/crontab.skel > $dir/crontab
 crontab $dir/crontab
 sudo service cron restart
 # -----------------------------------------
 # atd not start
-sudo apt -y remove at
-#sudo apt -y install at
+sudo apt-get -y remove at
+#sudo apt-get -y install at
 #sudo service atd restart
 # -----------------------------------------
 echo
 echo configure lighttpd
 echo
-sudo apt -y install lighttpd php-cgi
+sudo apt-get -y install lighttpd php-cgi
 sudo cp -p /etc/lighttpd/conf-available/15-fastcgi-php.conf /etc/lighttpd/conf-available/15-fastcgi-php.conf.org
 sudo sed -e ${userstr} $dir/15-fastcgi-php.conf.skel > $dir/15-fastcgi-php.conf
 sudo cp -p $dir/15-fastcgi-php.conf /etc/lighttpd/conf-available/15-fastcgi-php.conf
@@ -100,7 +100,7 @@ sudo service lighttpd restart
 echo
 echo configure samba
 echo
-sudo apt -y install samba
+sudo apt-get -y install samba
 sudo mkdir -p /var/log/samba
 #sudo chown root.adm /var/log/samba
 
