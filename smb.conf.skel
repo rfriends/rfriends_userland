@@ -1,6 +1,0 @@
-[smbdir]
-path = /home/rfriendsuser/smbdir
-readonly = no
-browsable = yes
-guest ok = yes
-force user = root
