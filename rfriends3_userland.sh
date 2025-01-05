@@ -25,8 +25,8 @@ echo
 echo install rfriends3,lighttpd,cron
 echo
 optlighttpd="on"
-optsamba="on"
-optsambaport="4445"
+optsamba="off"
+#optsambaport="4445"
 export optlighttpd
 export optsamba
 export optsambaport
