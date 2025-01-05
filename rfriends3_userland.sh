@@ -36,13 +36,13 @@ cd rfriends_ubuntu
 sh ubuntu_install.sh 2>&1 | tee ubuntu_install.log
 # -----------------------------------------
 #ip=`ip -4 -br a`
-ifconfgig | grep inet
+ifconfig | grep inet
 echo
 echo visit rfriends at http://ipアドレス:8000
 echo
-echo access samba at smb://ipアドレス:4445
-echo if windows then use Owlfiles
-echo
+#echo access samba at smb://ipアドレス:4445
+#echo if windows then use Owlfiles
+#echo
 echo caution!!! atd is not work
 echo
 # -----------------------------------------
