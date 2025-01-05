@@ -37,17 +37,15 @@ export LANG=ja_JP.UTF-8
 sudo apt-get -y install \
 unzip p7zip-full nano vim \
 dnsutils iproute2 tzdata openssh-server \
-wget curl atomicparsley \
+wget curl net-tools atomicparsley \
 php-cli php-xml php-zip php-mbstring php-json php-curl php-intl \
 ffmpeg
 
 #sudo apt-get -y install chromium-browser
 # -----------------------------------------
 # timezone
-sudo rm /etc/localtime 
-sudo echo Asia/Tokyo > /etc/timezone 
-sudo dpkg-reconfigure -f noninteractive tzdata
-
+sudo cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+date
 # -----------------------------------------
 echo
 echo install rfriends3
