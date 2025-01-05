@@ -13,7 +13,7 @@ echo rfriends3 for userland ubuntu $ver
 echo
 # -----------------------------------------
 sudo apt-get -y update
-sudo apt-get -y install inet-tools
+sudo apt-get -y install net-tools
 sudo apt-get -y install language-pack-ja
 export LANG=ja_JP.UTF-8
 # -----------------------------------------
