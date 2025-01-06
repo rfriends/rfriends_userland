@@ -2,9 +2,10 @@ rfriends_userlandはandroidのuserland環境でrfriends3を動作させるスク
   
 cd ~/  
 sudo apt install git  
+rm -rf rfriends_userland  
 git clone https://github.com/rfriends/rfriends_userland.git  
 cd rfriends_userland  
-sh rfriends3_userland.sh  
+sh rfriends_userland.sh  
   
 インストール方法は以下が参考になります。  
   
