@@ -8,5 +8,4 @@ cd rfriends_userland
 sh rfriends_userland.sh  
   
 インストール方法は以下が参考になります。  
-  
 [rfriends3のインストール手順 (UserLAnd編)](https://github.com/rfriends/rfriends_userland/wiki)
