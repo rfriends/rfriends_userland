@@ -9,5 +9,4 @@ sh rfriends_userland.sh
   
 インストール方法は以下が参考になります。  
   
-rfriends3のインストール手順 (UserLAnd編)  
-https://rfriends.hatenablog.com/entry/2023/07/14/195410  
+[rfriends3のインストール手順 (UserLAnd編)](https://github.com/rfriends/rfriends_userland/wiki)
