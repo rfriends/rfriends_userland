@@ -18,7 +18,7 @@ sudo apt-get -y install language-pack-ja
 export LANG=ja_JP.UTF-8
 # -----------------------------------------
 # timezone
-sudo cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 date
 # -----------------------------------------
 echo
