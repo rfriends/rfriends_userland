@@ -25,6 +25,10 @@ date
 echo
 echo install rfriends3,lighttpd,cron
 echo
+distro=ubuntu
+cmd="apt-get -y install"
+export user=userland
+export group=userland
 export optlighttpd="on"
 export optsamba="off"
 #export optsambaport="4445"
