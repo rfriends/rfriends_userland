@@ -35,26 +35,28 @@ export optsamba="off"
 #export optsambaport="4445"
 cd ~/
 git clone https://github.com/rfriends/rfriends3_core.git
+rm -rf rfriends3_core
 cd rfriends3_core
 sh common.sh 2>&1 | tee common.log
 # -----------------------------------------
 mkdir -p /storage/internal/usr2/
 cat <<EOF > $homedir/rfriends3/config/usrdir.ini
-usrdir = /storage/internal/usr2/"
+usrdir = "/storage/internal/usr2/"
 tmpdir = "$homedir/tmp/"
 EOF
 # stop atd
 sudo service atd stop
 # -----------------------------------------
 #ip=`ip -4 -br a`
-ifconfig | grep inet
+#ifconfig | grep inet
+hostname -I
 echo
 echo visit rfriends at http://ipアドレス:8000
 echo
 #echo access samba at smb://ipアドレス:4445
 #echo if windows then use Owlfiles
 #echo
-echo caution!!! atd is not work
+echo caution!!! atd is stopped
 echo
 # -----------------------------------------
 # finish
