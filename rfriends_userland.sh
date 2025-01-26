@@ -29,6 +29,7 @@ distro=ubuntu
 cmd="apt-get -y install"
 export user=userland
 export group=userland
+export homedir=/home/$user
 export optlighttpd="on"
 export optsamba="off"
 #export optsambaport="4445"
@@ -36,6 +37,14 @@ cd ~/
 git clone https://github.com/rfriends/rfriends3_core.git
 cd rfriends3_core
 sh common.sh 2>&1 | tee common.log
+# -----------------------------------------
+mkdir -p $homedir/internal/usr2/
+cat <<EOF > $homedir/rfriends3/config/usrdir.ini
+usrdir = "$homedir/internal/usr2/"
+tmpdir = "$homedir/tmp/"
+EOF
+# stop atd
+sudo service atd stop
 # -----------------------------------------
 #ip=`ip -4 -br a`
 ifconfig | grep inet
