@@ -35,7 +35,7 @@ export optsamba="off"
 cd ~/
 git clone https://github.com/rfriends/rfriends3_core.git
 cd rfriends3_core
-sh install_ubuntu.sh 2>&1 | tee install_ubuntu.log
+sh common.sh 2>&1 | tee common.log
 # -----------------------------------------
 #ip=`ip -4 -br a`
 ifconfig | grep inet
