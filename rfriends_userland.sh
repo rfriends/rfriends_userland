@@ -34,8 +34,8 @@ export optlighttpd="on"
 export optsamba="off"
 #export optsambaport="4445"
 cd ~/
-git clone https://github.com/rfriends/rfriends3_core.git
 rm -rf rfriends3_core
+git clone https://github.com/rfriends/rfriends3_core.git
 cd rfriends3_core
 sh common.sh 2>&1 | tee common.log
 # -----------------------------------------
@@ -46,8 +46,6 @@ tmpdir = "$homedir/tmp/"
 EOF
 # stop atd
 sudo service atd stop
-echo
-echo caution!!! atd is stopped
 # -----------------------------------------
 # finish
 # -----------------------------------------
