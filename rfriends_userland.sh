@@ -46,20 +46,11 @@ tmpdir = "$homedir/tmp/"
 EOF
 # stop atd
 sudo service atd stop
-# -----------------------------------------
-#ip=`ip -4 -br a`
-#ifconfig | grep inet
-hostname -I
 echo
-echo visit rfriends at http://ipアドレス:8000
-echo
-#echo access samba at smb://ipアドレス:4445
-#echo if windows then use Owlfiles
-#echo
 echo caution!!! atd is stopped
-echo
 # -----------------------------------------
 # finish
 # -----------------------------------------
+echo
 echo enjoy!
 # -----------------------------------------
