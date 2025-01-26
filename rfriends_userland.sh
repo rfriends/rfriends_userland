@@ -6,8 +6,9 @@
 # 3.9 2024/03/14 add samba
 # 4.0 2024/12/15 github
 # 4.1 2025/01/05 fix
+# 4.2 2025/01/27 renew
 # -----------------------------------------
-ver=4.1
+ver=4.2
 echo
 echo rfriends3 for userland ubuntu $ver
 echo
@@ -24,16 +25,13 @@ date
 echo
 echo install rfriends3,lighttpd,cron
 echo
-optlighttpd="on"
-optsamba="off"
-#optsambaport="4445"
-export optlighttpd
-export optsamba
-export optsambaport
+export optlighttpd="on"
+export optsamba="off"
+#export optsambaport="4445"
 cd ~/
-git clone https://github.com/rfriends/rfriends_ubuntu.git
-cd rfriends_ubuntu
-sh ubuntu_install.sh 2>&1 | tee ubuntu_install.log
+git clone https://github.com/rfriends/rfriends3_core.git
+cd rfriends3_core
+sh install_ubuntu.sh 2>&1 | tee install_ubuntu.log
 # -----------------------------------------
 #ip=`ip -4 -br a`
 ifconfig | grep inet
