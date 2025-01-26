@@ -38,9 +38,9 @@ git clone https://github.com/rfriends/rfriends3_core.git
 cd rfriends3_core
 sh common.sh 2>&1 | tee common.log
 # -----------------------------------------
-mkdir -p $homedir/internal/usr2/
+mkdir -p /storage/internal/usr2/
 cat <<EOF > $homedir/rfriends3/config/usrdir.ini
-usrdir = "$homedir/internal/usr2/"
+usrdir = /storage/internal/usr2/"
 tmpdir = "$homedir/tmp/"
 EOF
 # stop atd
