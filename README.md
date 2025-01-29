@@ -7,6 +7,6 @@ git clone https://github.com/rfriends/rfriends_userland.git
 cd rfriends_userland  
 sh rfriends_userland.sh  
   
-インストール方法は以下を参照してください。 
+インストール方法は以下を参照してください。  
 <https://github.com/rfriends/rfriends/blob/gh-pages/distro/userland.md>  
   
