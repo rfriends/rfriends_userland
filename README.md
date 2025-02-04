@@ -8,5 +8,5 @@ cd rfriends_userland
 sh rfriends_userland.sh  
   
 インストール方法は以下を参照してください。  
-<https://github.com/rfriends/rfriends/blob/gh-pages/distro/userland.md>  
+https://rfriends.github.io/rfriends/distro/userland.html  
   
